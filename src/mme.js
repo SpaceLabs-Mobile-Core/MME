@@ -4,27 +4,27 @@ import {
     AVP_CODES,
     AVP_NAMES,
     COMMAND_CODES
-} from '../../Common/Dictionary.js';
+} from '../Utils/Dictionary.js';
 
 import {
     createULR,
     decodeAuthenticationInfo,
     isAnswer
-} from '../../Common/Packet.js';
+} from '../Utils/Packet.js';
 
 import {
     createIPv4AVP,
     createStringAVP,
     createUInt32AVP,
     decodeAVP,
-} from '../../Common/AVP.js';
+} from '../Utils/AVP.js';
 
 import {
     createDiameterMessage,
     parseDiameterMessage
-} from '../../Common/Diameter.js';
+} from '../Utils/Diameter.js';
 
-import { verifyAuthenticationVector } from '../../Common/milenage.js';
+import { verifyAuthenticationVector } from '../Utils/milenage.js';
 
 let receiveBuffer = Buffer.alloc(0);
 
